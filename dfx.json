@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "blog_ext_backend": {
+      "main": "src/blog_ext_backend/main.mo",
+      "type": "motoko"
+    },
+    "blog_ext_frontend": {
+      "dependencies": [
+        "blog_ext_backend"
+      ],
+      "source": [
+        "src/blog_ext_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
